@@ -16,9 +16,10 @@ public class PaymentController {
 	@Autowired
 	private PaymentService paymentService;
 	
-	@RequestMapping(value = "/work/payment/payment.do", method=RequestMethod.GET)
+	@RequestMapping(value = "/work/payment/payment.do", method= {RequestMethod.GET, RequestMethod.POST})
 	public ModelAndView fwdPaymentPage() {
-		return new ModelAndView("index");
+		
+		return new ModelAndView("pmain");
 	}
 	
 	@RequestMapping(value = "/paymentDone.do")
@@ -31,8 +32,11 @@ public class PaymentController {
 		paymentService.insertPaymentSuccess(vo);
 	}
 	
-	@RequestMapping(value = {"/goMain.do", "/"})
+//	여기 수정했습니다~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	@RequestMapping(value = {"/work/payment/goMain.do"})
 	public ModelAndView goMain() {
-		return new ModelAndView("payment");
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/payment/pmain");
+		return mv;
 	}
 }

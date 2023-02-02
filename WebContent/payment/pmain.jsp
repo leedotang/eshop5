@@ -6,11 +6,11 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="pmain.jsp">
 <title>메인 페이지</title>
 </head>
 <body>
-	<a href="payment.do">[결제하기]</a>
+	<a href="payment/payment.do">[결제하기]</a>
 	<a href="${context}/work/payment/payment.do" class="nav-link">회원가입</a>
 </body>
 </html>

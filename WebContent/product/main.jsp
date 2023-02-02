@@ -164,7 +164,7 @@
 			</div>
 			</c:if>
 		<a href="payment.do">[결제하기]</a>
-		<a href="${context}/work/payment/payment.do" class="nav-link">회원가입</a>
+		<a href="${context}/work/payment/goMain.do" class="nav-link">회원가입</a>
 	<jsp:include page="../common/foot.jsp"></jsp:include>
 </body>
 </html>
