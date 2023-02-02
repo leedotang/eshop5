@@ -21,7 +21,6 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 
-import work.product.ProductBean;
 import work.code.CodeBean;
 import work.code.CodeService;
 import work.reply.ReplyService;

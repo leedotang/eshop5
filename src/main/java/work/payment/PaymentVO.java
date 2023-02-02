@@ -1,4 +1,4 @@
-package com.spring.iamport.model;
+package work.payment;
 
 import java.util.Date;
 

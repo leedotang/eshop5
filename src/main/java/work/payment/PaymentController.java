@@ -1,13 +1,14 @@
-package com.spring.iamport.command;
+package work.payment;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.spring.iamport.model.PaymentVO;
-import com.spring.iamport.service.PaymentService;
+
 
 @Controller
 public class PaymentController {
@@ -15,9 +16,9 @@ public class PaymentController {
 	@Autowired
 	private PaymentService paymentService;
 	
-	@RequestMapping(value = "/payment.do")
+	@RequestMapping(value = "/work/payment/payment.do", method=RequestMethod.GET)
 	public ModelAndView fwdPaymentPage() {
-		return new ModelAndView("payment");
+		return new ModelAndView("index");
 	}
 	
 	@RequestMapping(value = "/paymentDone.do")
@@ -32,6 +33,6 @@ public class PaymentController {
 	
 	@RequestMapping(value = {"/goMain.do", "/"})
 	public ModelAndView goMain() {
-		return new ModelAndView("index");
+		return new ModelAndView("payment");
 	}
 }

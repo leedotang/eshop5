@@ -1,6 +1,5 @@
-package com.spring.iamport.service;
+package work.payment;
 
-import com.spring.iamport.model.PaymentVO;
 
 public interface PaymentService {
 	

@@ -1,4 +1,4 @@
-package com.spring.iamport.dao;
+package work.payment;
 
 import java.io.Reader;
 
@@ -8,7 +8,6 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Repository;
 
-import com.spring.iamport.model.PaymentVO;
 
 @Repository
 public class PaymentDAO {

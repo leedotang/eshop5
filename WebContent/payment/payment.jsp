@@ -39,13 +39,13 @@
 	             };
 	             
 	             $.ajax({
-	            	url : "/iamport/paymentProcess.do", 
+	            	url : "/paymentProcess.do", 
 	            	method: "POST",
 	            	contentType : "application/json",
 	            	data : JSON.stringify(paymentInfo),
 	            	success:function(data, textStatus){
 	            		console.log(paymentInfo);
-	            		location.href = "/iamport/paymentDone.do";
+	            		location.href = "/paymentDone.do";
 	            	},
 	            	error : function (e) {
 						console.log(e);
